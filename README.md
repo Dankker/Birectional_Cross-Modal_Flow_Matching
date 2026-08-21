@@ -57,20 +57,6 @@ the Semantic-VAE implementation.
 Checkpoint binaries are intentionally ignored by Git and are not duplicated in
 this source repository.
 
-## Paired Normalized Transport-Error Experiment
-
-The repository includes separate GPU exporters for the image and speech
-branches and a CPU-only plotter that combines their outputs. Both exporters
-compute the per-sample curve
-
-```text
-D_i(s) = ||z_hat_i(s) - z_target_i||_F
-         / (||z_source_i - z_target_i||_F + epsilon)
-```
-
-before averaging over the fixed evaluation set. Forward and backward
-trajectories are stored in source-to-target order, so `s=0` is always the
-source and `s=1` is always the target endpoint.
 
 Submit the two independent GPU jobs:
 
