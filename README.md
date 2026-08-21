@@ -1,6 +1,6 @@
-# BVFM
+# Bidirectional Variational Flow Matching
 
-This repository collects the two BVFM research branches in one GitHub-ready
+This repository collects the two BVFM research branches. (T2I/I2T)(ASR/TTS)
 workspace:
 
 - `bvfm_image/`: image/text BVFM implementation.
