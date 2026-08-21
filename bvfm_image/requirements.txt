@@ -1,0 +1,10 @@
+torch
+torchvision
+numpy
+Pillow
+open_clip_torch
+timm
+einops
+ml_collections
+fairscale
+matplotlib

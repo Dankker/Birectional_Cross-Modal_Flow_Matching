@@ -1,0 +1,16 @@
+{
+  "ckpt_dir": "/work/dankker0900/bvfm/bvfm_speech/checkpoints/ckpt_joint_svae_zeroshot_best",
+  "checkpoint": "latest.pt",
+  "text": "THE MAGICIAN IS VERY BUSY AS I SAID BUT IF YOU WILL PROMISE NOT TO DISTURB HIM YOU MAY COME INTO HIS WORKSHOP AND WATCH HIM PREPARE A WONDERFUL CHARM",
+  "ref_wav": "/work/dankker0900/dataset/libritts_r/LibriTTS_R/test-clean/237/126133/237_126133_000002_000003.wav",
+  "out_dir": "/work/dankker0900/bvfm/bvfm_speech/tts_infer_one_outputs",
+  "out_name": "tts_one_zeroshot_best",
+  "device": "cuda",
+  "solver": "heun",
+  "nfe": 20,
+  "cfg_scale": 1.0,
+  "prior_temp": 0.0,
+  "style_temp": 0.0,
+  "seed": null,
+  "save_mel": true
+}

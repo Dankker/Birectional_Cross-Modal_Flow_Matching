@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Logs and runtime outputs
+logs/*
+runs/*
+wandb/
+*.log
+*.err
+*.out
+
+# Model artifacts
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.wav
+*.npy
+*.png
+*.jsonl
+
+# Branch-local generated artifacts
+bvfm_image/logs/*
+bvfm_image/runs/*
+bvfm_image/checkpoints/*
+bvfm_image/assets/*.pt
+bvfm_image/assets/*.pth
+bvfm_image/assets/*.bin
+
+bvfm_speech/logs/*
+bvfm_speech/runs/*
+bvfm_speech/BigVGAN/
+bvfm_speech/checkpoints/*
+bvfm_speech/pretrained_models/*
+bvfm_speech/Semantic-VAE/ckpts/*
+bvfm_speech/ckpt_*/
+bvfm_speech/demos_*/
+bvfm_speech/tts_infer_one_outputs/
+bvfm_speech/tts_infer_one_norm_outputs/
+bvfm_speech/svae_latent_visualizations/
+
+# Keep placeholder docs/files
+!**/.gitkeep
+!**/README.md

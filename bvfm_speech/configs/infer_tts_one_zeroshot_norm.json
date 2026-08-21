@@ -1,0 +1,16 @@
+{
+  "ckpt_dir": "/work/dankker0900/bvfm/bvfm_speech/checkpoints/ckpt_joint_svae_zeroshot_norm",
+  "checkpoint": "latest.pt",
+  "text": "I like text to speech synthesis and the dog is playing with me",
+  "ref_wav": "/work/dankker0900/bvfm/bvfm_speech/tts_infer_one_norm_outputs/spkB_ref.wav",
+  "out_dir": "/work/dankker0900/bvfm/bvfm_speech/tts_infer_one_norm_outputs",
+  "out_name": "tts_one_zeroshot_norm5",
+  "device": "cuda",
+  "solver": "euler",
+  "nfe": 10,
+  "cfg_scale": 1.5,
+  "prior_temp": 0.2,
+  "style_temp": 0.0,
+  "seed": null,
+  "save_mel": true
+}

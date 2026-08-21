@@ -1,0 +1,17 @@
+{
+  "type": "sentencepiece_bpe",
+  "model_path": "/work/dankker0900/biflow_repo_cutmanifest_svae_fullutt_spkecapa_zuvf_zeroshot/tokenizers/libritts_bpe_500.model",
+  "vocab_path": "/work/dankker0900/biflow_repo_cutmanifest_svae_fullutt_spkecapa_zuvf_zeroshot/tokenizers/libritts_bpe_500.vocab",
+  "requested_vocab_size": 500,
+  "actual_vocab_size": 500,
+  "num_unique_training_texts": 32619,
+  "training_text_sha256": "14437bd9579c9b4164a58b41c1e0b9cad4feb959d665776a8528493353907f06",
+  "manifests": [
+    "/work/dankker0900/dataset/processed_svae_unified/full_manifest_clean.jsonl"
+  ],
+  "special_ids": {
+    "<pad>": 0,
+    "<unk>": 1,
+    "<blank>": 2
+  }
+}
