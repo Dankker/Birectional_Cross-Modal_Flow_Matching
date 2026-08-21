@@ -1,10 +1,17 @@
 # Bidirectional Variational Flow Matching
 
-This repository collects the two BVFM research branches. (T2I/I2T)(ASR/TTS)
-workspace:
+This repository collects the two BVFM research branches: **text-to-image / image-to-text (T2I/I2T)** and **automatic speech recognition / text-to-speech (ASR/TTS)**.
 
-- `bvfm_image/`: image/text BVFM implementation.
-- `bvfm_speech/`: speech/text SVAE-BVFM implementation.
+* `bvfm_image/`: image/text BVFM implementation.
+* `bvfm_speech/`: speech/text SVAE-BVFM implementation.
+
+## Model Weights
+
+Pretrained BVFM checkpoints and required model assets are available on Hugging Face:
+
+**[🤗 Bidirectional Cross-Modal Flow Matching — Hugging Face](https://huggingface.co/Dankker0900/Birectional_Cross-Modal_Flow_Matching)**
+
+The Hugging Face repository contains the deployment checkpoints for both the **image/text** and **speech/text** branches.
 
 Large runtime artifacts are kept out of this GitHub tree. Generated demos,
 logs, runs, and model binaries belong in local ignored directories or in the
@@ -32,8 +39,12 @@ downloaded model-repository root:
 export BVFM_WEIGHTS_ROOT=/path/to/bvfm_huggingface
 ```
 
-The deployment package contains `image/bvfm_image_step40000.pt` and the
-required `image/FlowTiTok_512.bin`. Training-only initializers remain separate.
+The deployment package contains:
+
+* `image/bvfm_image_step40000.pt`
+* `image/FlowTiTok_512.bin`
+
+Training-only initializers remain separate.
 
 ## Speech Branch
 
@@ -45,9 +56,9 @@ python train.py --config configs/cutmanifest_svae_latent.json
 The speech deployment package is stored in the same Hugging Face model
 repository:
 
-- `speech/bvfm_speech_step299999_inference.pt`
-- `speech/merged_config.json`
-- `speech/semantic_vae_1000k/`
+* `speech/bvfm_speech_step299999_inference.pt`
+* `speech/merged_config.json`
+* `speech/semantic_vae_1000k/`
 
 The speech branch uses Semantic-VAE latents and decodes generated latents with
 the bundled Semantic-VAE checkpoint. It is not a BigVGAN-mel BVFM branch; any
@@ -57,6 +68,7 @@ the Semantic-VAE implementation.
 Checkpoint binaries are intentionally ignored by Git and are not duplicated in
 this source repository.
 
+## Transport Error Analysis
 
 Submit the two independent GPU jobs:
 
